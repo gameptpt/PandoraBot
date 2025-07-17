@@ -5,7 +5,7 @@ const cron = require("node-cron");
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
 // Replace with your values
-const TOKEN = "MTM5NTExMjQ1MTg4MzY2MzUzMQ.GHZGaM.3xTcjgtFhtb1l5HvVIshI3MvyLOrhfO3tw8j6I";
+const TOKEN = process.env.DISCORD_TOKEN;
 const CHANNEL_ID = "1395114303501373592";
 
 // Function to check if today is every 3rd day since July 17, 2025
